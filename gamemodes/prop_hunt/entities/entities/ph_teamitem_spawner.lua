@@ -14,7 +14,7 @@ if SERVER then
 end
 
 function ENT:Initialize()
-	if (not cvEnableTeamSpawner:GetBool())
+	if not cvEnableTeamSpawner:GetBool() then
 		if SERVER then self:Remove(); end
 		return
 	end
